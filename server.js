@@ -23,4 +23,4 @@ app.use('/', require('./routes/root'))
 app.use('/', express.static(path.join(__dirname, 'public')))
 app.use('/api', require('./routes/api').route)
 
-app.listen(SERVER_PORT, () => console.log("Server running on http://localhost:"+SERVER_PORT))
+app.listen(SERVER_PORT, () => console.log("Server running on http://localhost:"))
