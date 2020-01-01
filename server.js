@@ -16,7 +16,7 @@ app.use(session({
 }))
 app.use(passport.initialize())
 app.use(passport.session())
-onst SERVER_PORT= process.env.PORT ||9876
+const SERVER_PORT= process.env.PORT ||9876
 app.use('/public', require('./routes/public'))
 app.use('/private', require('./routes/private'))
 app.use('/', require('./routes/root'))
