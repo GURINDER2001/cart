@@ -1,0 +1,32 @@
+ Firstname:req.body.Firstname,
+        Lastname:req.body.Lastname,
+        Contact:req.body.Contact,
+        Username:req.body.Username,
+        Password:req.body.Password
+
+
+         id: {
+        type: Sequelize.INTEGER,
+        autoIncrement: true,
+        primaryKey: true
+    },
+    Firstname: {
+        type: Sequelize.STRING,
+        allowNull: false,
+    },
+    Lastname:{
+        type: Sequelize.STRING,
+        allowNull: false,
+    },
+    Contact:{
+        type: Sequelize.INTEGER,
+        allowNull: false,
+    },
+    Username:{
+        type: Sequelize.STRING,
+        allowNull: false,
+    },
+    Password:{
+        type: Sequelize.STRING,
+        allowNull: false,
+    }
